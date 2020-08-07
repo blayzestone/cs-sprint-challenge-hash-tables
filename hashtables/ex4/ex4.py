@@ -2,7 +2,18 @@ def has_negatives(a):
     """
     YOUR CODE HERE
     """
-    # Your code here
+    nums = set(())
+    result = []
+
+    for num in a:
+        nums.add(num)
+
+        if num != 0:
+            if num * -1 in nums:
+                if num < 0:
+                    result.append(num * -1)
+                else:
+                    result.append(num)
 
     return result
 
